@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+use work.recop_types.all;
+use work.opcodes.all;
+use work.various_constants.all;
+
+entity recop is
+	port(
+		clk: in bit_1;
+	);
+end recop;
+
+architecture behavior of recop is
+component program_counter
+	port (
+		clk		: in bit_1;
+		sel		: in bit_2;
+		m_out		: in bit_16;
+		rx			: in bit_16;
+		operand	: in bit_16;
+		pc_out	: out bit_16
+	);
+end component;

@@ -1,0 +1,23 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {D:/compsys701/recop/recop_types.vhd}
+vcom -93 -work work {D:/compsys701/recop/program_mem.vhd}
+vcom -93 -work work {D:/compsys701/recop/data_mem.vhd}
+vcom -93 -work work {D:/compsys701/recop/program_counter.vhd}
+vcom -93 -work work {D:/compsys701/recop/instruction_reg.vhd}
+vcom -93 -work work {D:/compsys701/recop/opcodes.vhd}
+vcom -93 -work work {D:/compsys701/recop/register_file.vhd}
+vcom -93 -work work {D:/compsys701/recop/mem_mux_data.vhd}
+vcom -93 -work work {D:/compsys701/recop/pipeline_reg_1.vhd}
+vcom -93 -work work {D:/compsys701/recop/pipeline_reg_2.vhd}
+vcom -93 -work work {D:/compsys701/recop/various_constants.vhd}
+vcom -93 -work work {D:/compsys701/recop/registerfile_mux.vhd}
+vcom -93 -work work {D:/compsys701/recop/alu.vhd}
+vcom -93 -work work {D:/compsys701/recop/mem_mux.vhd}
+vcom -93 -work work {D:/compsys701/recop/recop.vhd}
+

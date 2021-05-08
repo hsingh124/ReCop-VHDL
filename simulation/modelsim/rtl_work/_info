@@ -1,0 +1,176 @@
+m255
+K4
+z2
+!s11e vcom 2020.2 2020.04, Apr 19 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/simulation/modelsim
+T_opt
+!s110 1620451264
+VB6]OMQR:X453T;hN<cdUX1
+04 23 20 work program_counter_vhd_tst program_counter_arch 1
+=1-6c2b59fae008-60961fc0-10-3dd0
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OE;O;2020.2;71
+Popcodes
+Z1 DPx4 work 11 recop_types 0 22 :bNJzmhKMld1jnHB<B[8c1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+w1620259898
+R0
+8//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/opcodes.vhd
+F//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/opcodes.vhd
+l0
+L7 1
+VmmCTiQc_@dGNQW7ZkNd_V2
+!s100 YH6S8C_M@a4iM?d77]?=_1
+Z4 OE;C;2020.2;71
+32
+!s110 1620451211
+!i10b 1
+!s108 1620451211.000000
+!s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/opcodes.vhd|
+!s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/recop/opcodes.vhd|
+!i113 0
+Z5 o-work work
+Z6 tExplicit 1 CvgOpt 0
+Eprogram_counter
+Z7 w1620283036
+Z8 DPx4 work 11 recop_types 0 22 WV?5MD4mhmL?R2GobWOIQ3
+Z9 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z10 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 8
+R0
+Z11 8//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/program_counter.vhd
+Z12 F//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/program_counter.vhd
+l0
+L7 1
+VZF763:d>WMEiiIZWEIQEG0
+!s100 N8QNfb1`ck^^9hSD;mcj@3
+R4
+32
+Z13 !s110 1620451245
+!i10b 1
+Z14 !s108 1620451245.000000
+Z15 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/program_counter.vhd|
+Z16 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/recop/program_counter.vhd|
+!i113 0
+R5
+R6
+Abehaviour
+R8
+R9
+R10
+R2
+R3
+DEx4 work 15 program_counter 0 22 ZF763:d>WMEiiIZWEIQEG0
+!i122 8
+l21
+L18 22
+VRzZCa[@BhUmCgVFX5kS_W0
+!s100 b4VlH>F99QAiPgcF5a;2F3
+R4
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R5
+R6
+Eprogram_counter_vhd_tst
+Z17 w1620451180
+R2
+R3
+!i122 3
+R0
+Z18 8//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/simulation/modelsim/program_counter.vht
+Z19 F//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/simulation/modelsim/program_counter.vht
+l0
+L30 1
+V9cFZSgIeOJM[ONz]2]Kb21
+!s100 ddRmzW9JKmSQ`ADGNR?H;2
+R4
+32
+Z20 !s110 1620451190
+!i10b 1
+Z21 !s108 1620451190.000000
+Z22 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/simulation/modelsim/program_counter.vht|
+Z23 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/recop/simulation/modelsim/program_counter.vht|
+!i113 0
+R5
+R6
+Aprogram_counter_arch
+R2
+R3
+DEx4 work 23 program_counter_vhd_tst 0 22 9cFZSgIeOJM[ONz]2]Kb21
+!i122 3
+l51
+L32 59
+V5DUNIPIAbX7=cm[fzV09o1
+!s100 X@2Ud2XJSj>Ba2`dSP1nJ0
+R4
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R5
+R6
+Precop_types
+R2
+R3
+!i122 6
+w1620259814
+R0
+8//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/recop_types.vhd
+F//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/recop_types.vhd
+l0
+L3 1
+VWV?5MD4mhmL?R2GobWOIQ3
+!s100 RcIkMA>EJ_aLRkLTV:CkJ0
+R4
+32
+!s110 1620451231
+!i10b 1
+!s108 1620451231.000000
+!s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/recop_types.vhd|
+!s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/recop/recop_types.vhd|
+!i113 0
+R5
+R6
+Pvarious_constants
+R1
+R2
+R3
+!i122 5
+w1620283212
+R0
+8//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/various_constants.vhd
+F//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/various_constants.vhd
+l0
+L7 1
+VFOg;R=SI[HUP4kOGMj6L;2
+!s100 h[mbICG[_VLW<J`?I`[O]1
+R4
+32
+!s110 1620451215
+!i10b 1
+!s108 1620451215.000000
+!s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/various_constants.vhd|
+!s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/recop/various_constants.vhd|
+!i113 0
+R5
+R6

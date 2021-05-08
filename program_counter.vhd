@@ -1,44 +1,40 @@
+library ieee;
+use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
-
 use work.recop_types.all;
-use work.opcodes.all;
 
 entity program_counter is
-	port(
-	clk: in std_logic;
-	sel: in std_logic;
-	m_out: in std_logic_vector(15 downto 0);
-	rx: in std_logic_vector(15 downto 0);
-	ir_hold: in std_logic_vector(15 downto 0);
-	pc_hold: out std_logic_vector(15 downto 0));
+port (
+	clk		: in bit_1;
+	sel		: in bit_2;
+	m_out		: in bit_16;
+	rx			: in bit_16;
+	operand	: in bit_16;
+	pc_out	: out bit_16
+);
 end program_counter;
 
-architecture count of program_counter is
-component pc_mux
-	port(
-	clk: in std_logic;
-	sel: in std_logic_vector(1 downto 0);
-	m_out: in std_logic_vector(15 downto 0); 
-	rx: in std_logic_vector(15 downto 0);
-	ir_hold: in std_logic_vector(15 downto 0);
-	p_add: in std_logic_vector(15 downto 0);
-	pc_hold: out std_logic_vector(15 downto 0));
-end component 
+architecture behaviour of program_counter	is
+	signal pc_in			: bit_16 := X"0000";
+	signal pc_out_temp	: bit_16 := X"0000";
+begin
 
-component pc_adder
-	port(
-	clk: in std_logic;
-	pc_hold: in std_logic_vector(15 downto 0);
-	pc_add: out std_logic_vecor(15 downto 0));
-end component 
-
-signal pc_temp: std_logic_vector(15 downto 0) := 0;
-signal pc_addout: std_logic_vector(15 downto 0) := 0;
-
-begin 
-
-pc_mux: port map(clk, sel, m_out, rx, ir_hold, pc_addout, pc_temp);
-pc_add: port map(clk, pc_temp, pc_addout);
-
-end count 
+	pc_out <= pc_out_temp;
+	
+	pc_in <= m_out		when sel="00" else
+				rx 		when sel="01" else
+				operand	when sel="10" else
+				pc_out_temp + 1;
+	
+	process(clk)
+	begin
+	
+		if rising_edge(clk) then
+			pc_out_temp <= pc_in;
+		end if;	
+		
+	end process;
+	
+end architecture behaviour;
+	
