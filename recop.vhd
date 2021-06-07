@@ -70,7 +70,6 @@ component control_unit
 		clk					: in bit_1;
 		am						: in bit_2;
 		opcode 				: in bit_6;
-		
 		pc_sel				: out bit_2;
 		pr1_ctrl				: out bit_1;
 		rf_input_sel		: out bit_3;
@@ -79,7 +78,8 @@ component control_unit
 		alu_op1_sel			: out bit_2;
 		alu_op2_sel			: out bit_1;
 		mem_addr_sel		: out bit_2;
-		mem_mux_data_sel	: out bit_2
+		mem_mux_data_sel	: out bit_2;
+		dm_wren				: out bit_1
 	);
 end component;
 
@@ -293,7 +293,7 @@ begin
 	port map (clk, pr1_ctrl, ir_operand, ir_rx, ir_rz, opcode, am, ir_operand_1, ir_rx_1, ir_rz_1, opcode_1, am_1);
 	
 	cu: control_unit
-	port map (clk, am_1, opcode_1, pc_sel, pr1_ctrl, rf_input_sel, pr2_ctrl, alu_operation, alu_op1_sel, alu_op2_sel, mem_addr_sel, mem_mux_data_sel);
+	port map (clk, am_1, opcode_1, pc_sel, pr1_ctrl, rf_input_sel, pr2_ctrl, alu_operation, alu_op1_sel, alu_op2_sel, mem_addr_sel, mem_mux_data_sel, dm_wren);
 	
 	rf_mux: registerfile_mux
 	port map (rf_input_sel, ir_operand_2, dm_out, alu_out, rz_max, sip, er, dprr, data_to_reg);

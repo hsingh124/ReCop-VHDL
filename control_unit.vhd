@@ -21,7 +21,8 @@ entity control_unit is
 		alu_op1_sel			: out bit_2;
 		alu_op2_sel			: out bit_1;
 		mem_addr_sel		: out bit_2;
-		mem_mux_data_sel	: out bit_2
+		mem_mux_data_sel	: out bit_2;
+		dm_wren				: out bit_1
 	);
 end control_unit;
 
@@ -88,6 +89,13 @@ begin
 				pc_sel_1 <= pc_sel_next;
 				rf_input_sel_1 <= rf_sel_ir_operand;
 				alu_operation_1 <= alu_idle;
+			
+			elsif opcode = str then
+				pc_sel_1 <= pc_sel_next;
+				dm_wren <= '1';
+				mem_mux_data_sel <= "00";
+				mem_addr_sel <= "01";
+			
 			end if;
 		elsif am = am_direct then
 			
