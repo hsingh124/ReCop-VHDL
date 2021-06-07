@@ -296,7 +296,7 @@ begin
 	port map (clk, am_1, opcode_1, pc_sel, pr1_ctrl, rf_input_sel, pr2_ctrl, alu_operation, alu_op1_sel, alu_op2_sel, mem_addr_sel, mem_mux_data_sel);
 	
 	rf_mux: registerfile_mux
-	port map (rf_input_sel, ir_operand_1, dm_out, alu_out, rz_max, sip, er, dprr, data_to_reg);
+	port map (rf_input_sel, ir_operand_2, dm_out, alu_out, rz_max, sip, er, dprr, data_to_reg);
 	
 	rf: register_file
 	port map (clk, data_to_reg, ir_rx_1, ir_rz_1, ir_rz_2,  rx, rz, r7, r8, r10);

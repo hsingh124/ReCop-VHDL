@@ -84,6 +84,10 @@ begin
 				alu_op1_sel_1 <= alu_op1_ir_operand;
 				alu_op2_sel_1 <= alu_op2_sel_rx;
 			
+			elsif opcode = ldr then
+				pc_sel_1 <= pc_sel_next;
+				rf_input_sel_1 <= rf_sel_ir_operand;
+				alu_operation_1 <= alu_idle;
 			end if;
 		elsif am = am_direct then
 			
