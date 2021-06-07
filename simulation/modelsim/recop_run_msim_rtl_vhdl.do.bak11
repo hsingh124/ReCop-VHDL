@@ -44,6 +44,20 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/newRecop/ReCop-VHDL/recop_types.vhd}
-vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/newRecop/ReCop-VHDL/program_counter.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/recop_types.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/data_mem.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_mem_32.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_counter.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/instruction_reg.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/opcodes.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/register_file.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/mem_mux_data.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_1.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_2.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/various_constants.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/registerfile_mux.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/alu.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/mem_mux.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/recop.vhd}
+vcom -93 -work work {//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/control_unit.vhd}
 

@@ -27,13 +27,23 @@ end control_unit;
 
 architecture behaviour of control_unit is
 
-signal pc_sel_1				: bit_2 := "11";
+--signal pc_sel_1				: bit_2 := "11";
+--signal pr1_ctrl_1				: bit_1 := '1';
+--signal rf_input_sel_1		: bit_3 := "011";
+--signal pr2_ctrl_1				: bit_1 := '1';
+--signal alu_operation_1		: bit_3 := "000";
+--signal alu_op1_sel_1			: bit_2 := "00";
+--signal alu_op2_sel_1			: bit_1 := '0';
+--signal mem_addr_sel_1		: bit_2 := "00";
+--signal mem_mux_data_sel_1	: bit_2 := "00";
+
+signal pc_sel_1				: bit_2;
 signal pr1_ctrl_1				: bit_1 := '1';
-signal rf_input_sel_1		: bit_3 := "000";
+signal rf_input_sel_1		: bit_3;
 signal pr2_ctrl_1				: bit_1 := '1';
-signal alu_operation_1		: bit_3 := "000";
-signal alu_op1_sel_1			: bit_2 := "00";
-signal alu_op2_sel_1			: bit_1 := '0';
+signal alu_operation_1		: bit_3 := alu_idle;
+signal alu_op1_sel_1			: bit_2;
+signal alu_op2_sel_1			: bit_1;
 signal mem_addr_sel_1		: bit_2 := "00";
 signal mem_mux_data_sel_1	: bit_2 := "00";
 
@@ -44,12 +54,36 @@ begin
 		if am = am_inherent then
 
 		elsif am = am_immediate then
-			if opcode = andr then
+			-- change andr to addr
+			if opcode = addr then
 				pc_sel_1 <= pc_sel_next;
 				rf_input_sel_1 <= rf_sel_aluout;
 				alu_operation_1 <= alu_add;
 				alu_op1_sel_1 <= alu_op1_ir_operand;
 				alu_op2_sel_1 <= alu_op2_sel_rx;
+			
+			elsif opcode = andr then
+				pc_sel_1 <= pc_sel_next;
+				rf_input_sel_1 <= rf_sel_aluout;
+				alu_operation_1 <= alu_and;
+				alu_op1_sel_1 <= alu_op1_ir_operand;
+				alu_op2_sel_1 <= alu_op2_sel_rx;
+			
+			elsif opcode = orr then
+				pc_sel_1 <= pc_sel_next;
+				rf_input_sel_1 <= rf_sel_aluout;
+				alu_operation_1 <= alu_or;
+				alu_op1_sel_1 <= alu_op1_ir_operand;
+				alu_op2_sel_1 <= alu_op2_sel_rx;
+			
+			-- double check the subv and sub stuff
+			elsif opcode = subr then
+				pc_sel_1 <= pc_sel_next;
+				rf_input_sel_1 <= rf_sel_aluout;
+				alu_operation_1 <= alu_sub;
+				alu_op1_sel_1 <= alu_op1_ir_operand;
+				alu_op2_sel_1 <= alu_op2_sel_rx;
+			
 			end if;
 		elsif am = am_direct then
 			

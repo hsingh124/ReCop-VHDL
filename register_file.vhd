@@ -27,7 +27,7 @@ architecture behaviour of register_file is
 begin
 	
 	rx 	<= reg_array(to_integer(unsigned(sel_x)));
-	rz		<= reg_array(to_integer(unsigned(wr_addr))) when (sel_z = wr_addr) else
+	rz		<= z when (sel_z = wr_addr) else
 				reg_array(to_integer(unsigned(sel_z)));
 	r7 	<= reg_array(7);
 	r8 	<= reg_array(8);
