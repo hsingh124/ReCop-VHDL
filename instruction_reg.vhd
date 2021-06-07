@@ -7,8 +7,7 @@ use work.recop_types.all;
 entity instruction_reg is
 port (
 	clk			: in bit_1;
-	mem_out		: in bit_16;
-	ld_operand	: in bit_1;
+	mem_out		: in bit_32;
 	operand		: out bit_16;
 	rx				: out bit_4;
 	rz				: out bit_4;
@@ -28,14 +27,11 @@ begin
 	process(clk)
 	begin
 		if rising_edge(clk) then
-			if ld_operand = '1' then
-				operand_temp <= mem_out;
-			else
-				rx_temp 		<= mem_out(3 downto 0);
-				rz_temp 		<= mem_out(7 downto 4);
-				opcode_temp <= mem_out(13 downto 8);
-				am_temp		<= mem_out(15 downto 14);
-			end if;
+			operand_temp 	<= mem_out(15 downto 0);
+			rx_temp 			<= mem_out(19 downto 16);
+			rz_temp 			<= mem_out(23 downto 20);
+			opcode_temp 	<= mem_out(29 downto 24);
+			am_temp			<= mem_out(31 downto 30);
 		end if;
 	end process;
 	

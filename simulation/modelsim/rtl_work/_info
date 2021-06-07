@@ -8,77 +8,58 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/simulation/modelsim
+Z0 d//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/simulation/modelsim
 T_opt
-!s110 1620451264
-VB6]OMQR:X453T;hN<cdUX1
-04 23 20 work program_counter_vhd_tst program_counter_arch 1
-=1-6c2b59fae008-60961fc0-10-3dd0
+!s110 1623041362
+V4;BMidimOPib5LJkaj6O[3
+04 13 10 work recop_vhd_tst recop_arch 1
+=1-e454e865a266-60bda550-16a-2b88
 o-quiet -auto_acc_if_foreign -work work +acc
 tCvgOpt 0
 n@_opt
 OE;O;2020.2;71
-Popcodes
-Z1 DPx4 work 11 recop_types 0 22 :bNJzmhKMld1jnHB<B[8c1
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 4
-w1620259898
+Ealu
+Z1 w1620522464
+Z2 DPx4 work 17 various_constants 0 22 RjVaiKF:bInnVXNinBFME1
+Z3 DPx4 work 7 opcodes 0 22 mmCTiQc_@dGNQW7ZkNd_V2
+Z4 DPx4 work 11 recop_types 0 22 WV?5MD4mhmL?R2GobWOIQ3
+Z5 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z6 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 167
 R0
-8//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/opcodes.vhd
-F//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/opcodes.vhd
+Z9 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/alu.vhd
+Z10 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/alu.vhd
 l0
-L7 1
-VmmCTiQc_@dGNQW7ZkNd_V2
-!s100 YH6S8C_M@a4iM?d77]?=_1
-Z4 OE;C;2020.2;71
+Z11 L11 1
+Vk1H]zAWHcf5KdAIcoiof43
+!s100 >49m_zOb6ghWznIbD6TQ@0
+Z12 OE;C;2020.2;71
 32
-!s110 1620451211
+Z13 !s110 1623041346
 !i10b 1
-!s108 1620451211.000000
-!s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/opcodes.vhd|
-!s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/recop/opcodes.vhd|
+Z14 !s108 1623041346.000000
+Z15 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/alu.vhd|
+Z16 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/alu.vhd|
 !i113 0
-Z5 o-work work
-Z6 tExplicit 1 CvgOpt 0
-Eprogram_counter
-Z7 w1620283036
-Z8 DPx4 work 11 recop_types 0 22 WV?5MD4mhmL?R2GobWOIQ3
-Z9 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z10 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Acombined
 R2
 R3
-!i122 8
-R0
-Z11 8//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/program_counter.vhd
-Z12 F//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/program_counter.vhd
-l0
-L7 1
-VZF763:d>WMEiiIZWEIQEG0
-!s100 N8QNfb1`ck^^9hSD;mcj@3
 R4
-32
-Z13 !s110 1620451245
-!i10b 1
-Z14 !s108 1620451245.000000
-Z15 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/program_counter.vhd|
-Z16 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/recop/program_counter.vhd|
-!i113 0
 R5
 R6
-Abehaviour
+R7
 R8
-R9
-R10
-R2
-R3
-DEx4 work 15 program_counter 0 22 ZF763:d>WMEiiIZWEIQEG0
-!i122 8
-l21
-L18 22
-VRzZCa[@BhUmCgVFX5kS_W0
-!s100 b4VlH>F99QAiPgcF5a;2F3
-R4
+DEx4 work 3 alu 0 22 k1H]zAWHcf5KdAIcoiof43
+!i122 167
+l36
+L32 71
+Ve:B^0]IOEY[^]g]bY;C5U2
+!s100 LC49IGJf7T5kO@4Q;LPoI1
+R12
 32
 R13
 !i10b 1
@@ -86,91 +67,817 @@ R14
 R15
 R16
 !i113 0
-R5
-R6
-Eprogram_counter_vhd_tst
-Z17 w1620451180
+R17
+R18
+Econtrol_unit
+Z19 w1623041310
 R2
 R3
-!i122 3
+R4
+R5
+R6
+R7
+R8
+!i122 168
 R0
-Z18 8//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/simulation/modelsim/program_counter.vht
-Z19 F//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/simulation/modelsim/program_counter.vht
+Z20 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/control_unit.vhd
+Z21 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/control_unit.vhd
 l0
-L30 1
-V9cFZSgIeOJM[ONz]2]Kb21
-!s100 ddRmzW9JKmSQ`ADGNR?H;2
-R4
+Z22 L10 1
+VgP`J:m`:IR2GZEk=EGhPS3
+!s100 i93OeYkcZmj@QXidD^@j@3
+R12
 32
-Z20 !s110 1620451190
+R13
 !i10b 1
-Z21 !s108 1620451190.000000
-Z22 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/simulation/modelsim/program_counter.vht|
-Z23 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/recop/simulation/modelsim/program_counter.vht|
+R14
+Z23 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/control_unit.vhd|
+Z24 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/control_unit.vhd|
 !i113 0
-R5
-R6
-Aprogram_counter_arch
+R17
+R18
+Abehaviour
 R2
 R3
-DEx4 work 23 program_counter_vhd_tst 0 22 9cFZSgIeOJM[ONz]2]Kb21
-!i122 3
-l51
-L32 59
-V5DUNIPIAbX7=cm[fzV09o1
-!s100 X@2Ud2XJSj>Ba2`dSP1nJ0
 R4
+R5
+R6
+R7
+R8
+DEx4 work 12 control_unit 0 22 gP`J:m`:IR2GZEk=EGhPS3
+!i122 168
+l40
+L28 50
+VnOo2U3dBl6j68h<zHlce50
+!s100 5CQ8@B?c3QE2PMe[>:04d1
+R12
 32
-R20
+R13
 !i10b 1
-R21
-R22
+R14
 R23
+R24
 !i113 0
+R17
+R18
+Edata_mem
+R1
+Z25 DPx9 altera_mf 20 altera_mf_components 0 22 z693OcI2YmSdfbRXMZge[3
+R7
+R8
+!i122 169
+R0
+Z26 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/data_mem.vhd
+Z27 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/data_mem.vhd
+l0
+Z28 L42 1
+Vj]]C`?Th8b<<FhMG=H9Bo0
+!s100 aPQ`ogP8j:[KH@3_<B<e<0
+R12
+32
+Z29 !s110 1623041347
+!i10b 1
+Z30 !s108 1623041347.000000
+Z31 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/data_mem.vhd|
+Z32 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/data_mem.vhd|
+!i113 0
+R17
+R18
+Asyn
+R25
+R7
+R8
+DEx4 work 8 data_mem 0 22 j]]C`?Th8b<<FhMG=H9Bo0
+!i122 169
+l58
+L54 35
+V1L4l@gzZ1f0GZ59OckY4m3
+!s100 4=a=hobW[:zPe3LjWKeBo1
+R12
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 0
+R17
+R18
+Einstruction_reg
+Z33 w1620568848
+R4
 R5
 R6
-Precop_types
+R7
+R8
+!i122 170
+R0
+Z34 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/instruction_reg.vhd
+Z35 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/instruction_reg.vhd
+l0
+L7 1
+V`YeTgXeiboH34:AZBM[lD2
+!s100 Zj4m2a;:`P1Ybz>l[VfnQ3
+R12
+32
+R29
+!i10b 1
+R30
+Z36 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/instruction_reg.vhd|
+Z37 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/instruction_reg.vhd|
+!i113 0
+R17
+R18
+Abehaviour
+R4
+R5
+R6
+R7
+R8
+DEx4 work 15 instruction_reg 0 22 `YeTgXeiboH34:AZBM[lD2
+!i122 170
+l25
+L19 26
+V4i5>z7C>nRQZjjmoSZXbh3
+!s100 :Lek?o6MD>0=R2Uz:h8d10
+R12
+32
+R29
+!i10b 1
+R30
+R36
+R37
+!i113 0
+R17
+R18
+Emem_mux
+Z38 w1620522466
+R3
+R4
+R5
+R6
+R7
+R8
+!i122 171
+R0
+Z39 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/mem_mux.vhd
+Z40 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/mem_mux.vhd
+l0
+R11
+VhQhdkfGf@R:YYGHEMmB=[2
+!s100 5HkYU7Lf;S;c=_Bn>XXAZ0
+R12
+32
+R29
+!i10b 1
+R30
+Z41 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/mem_mux.vhd|
+Z42 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/mem_mux.vhd|
+!i113 0
+R17
+R18
+Abeh
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 7 mem_mux 0 22 hQhdkfGf@R:YYGHEMmB=[2
+!i122 171
+l25
+L23 19
+VN3^caCG3Pg0J>I5h>^i;X0
+!s100 K9V^mB?4PXRJSE0:cFPNR1
+R12
+32
+R29
+!i10b 1
+R30
+R41
+R42
+!i113 0
+R17
+R18
+Emem_mux_data
+R38
+R4
+R5
+R6
+R7
+R8
+!i122 172
+R0
+Z43 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/mem_mux_data.vhd
+Z44 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/mem_mux_data.vhd
+l0
+L7 1
+Vh=MFD_lhP0>ZdlG@4;VBO3
+!s100 5YETo0Nh?FP=IbQTEe52g3
+R12
+32
+Z45 !s110 1623041348
+!i10b 1
+R30
+Z46 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/mem_mux_data.vhd|
+Z47 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/mem_mux_data.vhd|
+!i113 0
+R17
+R18
+Abehaviour
+R4
+R5
+R6
+R7
+R8
+DEx4 work 12 mem_mux_data 0 22 h=MFD_lhP0>ZdlG@4;VBO3
+!i122 172
+l18
+L17 7
+VGZIDlU7NOGN[P3Q?TN_0A3
+!s100 mhShDoSU9Z^[3[o9KGgL93
+R12
+32
+R45
+!i10b 1
+R30
+R46
+R47
+!i113 0
+R17
+R18
+Popcodes
+R4
+R7
+R8
+!i122 173
+R38
+R0
+8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/opcodes.vhd
+F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/opcodes.vhd
+l0
+L7 1
+VmmCTiQc_@dGNQW7ZkNd_V2
+!s100 YH6S8C_M@a4iM?d77]?=_1
+R12
+32
+R45
+!i10b 1
+Z48 !s108 1623041348.000000
+!s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/opcodes.vhd|
+!s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/opcodes.vhd|
+!i113 0
+R17
+R18
+Epipeline_reg_1
+R38
+R4
+R5
+R6
+R7
+R8
+!i122 174
+R0
+Z49 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_1.vhd
+Z50 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_1.vhd
+l0
+L7 1
+V`fDQb<5]E5YWd]0WLJ_QE2
+!s100 XF7_gJk4[momER<@lJ6991
+R12
+32
+R45
+!i10b 1
+R48
+Z51 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_1.vhd|
+Z52 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_1.vhd|
+!i113 0
+R17
+R18
+Abehaviour
+R4
+R5
+R6
+R7
+R8
+DEx4 work 14 pipeline_reg_1 0 22 `fDQb<5]E5YWd]0WLJ_QE2
+!i122 174
+l25
+L24 17
+V1o[YGm_VWcl6_fa2GdTUb1
+!s100 K]=R[SXT8jL]6YBnYZ?B00
+R12
+32
+R45
+!i10b 1
+R48
+R51
+R52
+!i113 0
+R17
+R18
+Epipeline_reg_2
+Z53 w1623035354
+R4
+R5
+R6
+R7
+R8
+!i122 175
+R0
+Z54 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_2.vhd
+Z55 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_2.vhd
+l0
+L7 1
+Vc8[SUQkXT]L6M=0dM5e?I3
+!s100 B[Pf2VZL1Q3nE<=]H950;1
+R12
+32
+R45
+!i10b 1
+R48
+Z56 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_2.vhd|
+Z57 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_2.vhd|
+!i113 0
+R17
+R18
+Abehaviour
+R4
+R5
+R6
+R7
+R8
+DEx4 work 14 pipeline_reg_2 0 22 c8[SUQkXT]L6M=0dM5e?I3
+!i122 175
+l30
+L29 17
+VS2nYNDdY^_Wm?5RW<7PRk1
+!s100 Fh0O2>eDCzHn:LfOoN;GF3
+R12
+32
+R45
+!i10b 1
+R48
+R56
+R57
+!i113 0
+R17
+R18
+Epipeline_reg_3
+Z58 w1623035693
+R4
+R5
+R6
+R7
+R8
+!i122 176
+R0
+Z59 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_3.vhd
+Z60 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_3.vhd
+l0
+L7 1
+VGfAMJ1MgdZUT;3DfHH4733
+!s100 mM3nH_oB3GVZ0LJiJUV8Z3
+R12
+32
+Z61 !s110 1623041349
+!i10b 1
+Z62 !s108 1623041349.000000
+Z63 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_3.vhd|
+Z64 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/pipeline_reg_3.vhd|
+!i113 0
+R17
+R18
+Abehaviour
+R4
+R5
+R6
+R7
+R8
+DEx4 work 14 pipeline_reg_3 0 22 GfAMJ1MgdZUT;3DfHH4733
+!i122 176
+l21
+L20 15
+Vm1YK[0RoM:03FVC3NPMQL0
+!s100 MG;XbNPcM61;BU9RC1Ak[1
+R12
+32
+R61
+!i10b 1
+R62
+R63
+R64
+!i113 0
+R17
+R18
+Eprogram_counter
+R38
+R4
+R5
+R6
+R7
+R8
+!i122 177
+R0
+Z65 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_counter.vhd
+Z66 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_counter.vhd
+l0
+L7 1
+VZF763:d>WMEiiIZWEIQEG0
+!s100 N8QNfb1`ck^^9hSD;mcj@3
+R12
+32
+R61
+!i10b 1
+R62
+Z67 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_counter.vhd|
+Z68 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_counter.vhd|
+!i113 0
+R17
+R18
+Abehaviour
+R4
+R5
+R6
+R7
+R8
+DEx4 work 15 program_counter 0 22 ZF763:d>WMEiiIZWEIQEG0
+!i122 177
+l21
+L18 22
+VRzZCa[@BhUmCgVFX5kS_W0
+!s100 b4VlH>F99QAiPgcF5a;2F3
+R12
+32
+R61
+!i10b 1
+R62
+R67
+R68
+!i113 0
+R17
+R18
+Eprogram_mem
+R38
+R25
+R7
+R8
+!i122 178
+R0
+Z69 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_mem.vhd
+Z70 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_mem.vhd
+l0
+R28
+VH2Y?6;DRIle6DznRC8`9Y2
+!s100 lzQagL8c5QY_Y8lBHoMaS2
+R12
+32
+R61
+!i10b 1
+R62
+Z71 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_mem.vhd|
+Z72 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_mem.vhd|
+!i113 0
+R17
+R18
+Asyn
+R25
+R7
+R8
+DEx4 work 11 program_mem 0 22 H2Y?6;DRIle6DznRC8`9Y2
+!i122 178
+l56
+Z73 L52 33
+VEecRBd?Z5VZj4V=6nmC5z2
+!s100 WQZRG;bObeH69MLl=i[X?1
+R12
+32
+R61
+!i10b 1
+R62
+R71
+R72
+!i113 0
+R17
+R18
+Eprogram_mem_32
+Z74 w1620559250
+R25
+R7
+R8
+!i122 179
+R0
+Z75 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_mem_32.vhd
+Z76 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_mem_32.vhd
+l0
+R28
+Vo<ef5Rf5djR[OgV>;>HT40
+!s100 Oad8?^3:bbHJD;X3OgEPd3
+R12
+32
+Z77 !s110 1623041350
+!i10b 1
+Z78 !s108 1623041350.000000
+Z79 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_mem_32.vhd|
+Z80 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/program_mem_32.vhd|
+!i113 0
+R17
+R18
+Asyn
+R25
+R7
+R8
+DEx4 work 14 program_mem_32 0 22 o<ef5Rf5djR[OgV>;>HT40
+!i122 179
+l56
+R73
+V]f4>32_S]GZ0^`mg5L=_^0
+!s100 KJWK1L]N4fGiJ1b2BGc]O0
+R12
+32
+R77
+!i10b 1
+R78
+R79
+R80
+!i113 0
+R17
+R18
+Erecop
+Z81 w1623035832
 R2
 R3
-!i122 6
-w1620259814
+R4
+R5
+R6
+R7
+R8
+!i122 180
 R0
-8//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/recop_types.vhd
-F//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/recop_types.vhd
+Z82 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/recop.vhd
+Z83 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/recop.vhd
+l0
+R22
+V=F<:`U6XH_a72TV50aATU1
+!s100 fB]^DU5XT3li0<R82h^6b3
+R12
+32
+R77
+!i10b 1
+R78
+Z84 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/recop.vhd|
+Z85 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/recop.vhd|
+!i113 0
+R17
+R18
+Abehaviour
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 5 recop 0 22 =F<:`U6XH_a72TV50aATU1
+!i122 180
+l281
+L16 309
+V_BPb4XBDR4A0WmnG0Z>k^1
+!s100 Pi5=<0nc`D1Ong;QXb7Eh3
+R12
+32
+R77
+!i10b 1
+R78
+R84
+R85
+!i113 0
+R17
+R18
+Precop_types
+R7
+R8
+!i122 181
+R38
+R0
+8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/recop_types.vhd
+F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/recop_types.vhd
 l0
 L3 1
 VWV?5MD4mhmL?R2GobWOIQ3
 !s100 RcIkMA>EJ_aLRkLTV:CkJ0
-R4
+R12
 32
-!s110 1620451231
+Z86 !s110 1623041351
 !i10b 1
-!s108 1620451231.000000
-!s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/recop_types.vhd|
-!s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/recop/recop_types.vhd|
+R78
+!s90 -reportprogress|30|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/recop_types.vhd|
+!s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/recop_types.vhd|
 !i113 0
+R17
+R18
+Erecop_vhd_tst
+R74
+R7
+R8
+!i122 166
+R0
+Z87 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/simulation/modelsim/recop.vht
+Z88 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/simulation/modelsim/recop.vht
+l0
+L30 1
+V2J[H66S2k6S39eLDNc9Z41
+!s100 MX<EGFzN:>Jk;NB=XS[z43
+R12
+32
+Z89 !s110 1623041339
+!i10b 1
+Z90 !s108 1623041339.000000
+Z91 !s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/simulation/modelsim/recop.vht|
+Z92 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/simulation/modelsim/recop.vht|
+!i113 0
+R17
+R18
+Arecop_arch
+R7
+R8
+DEx4 work 13 recop_vhd_tst 0 22 2J[H66S2k6S39eLDNc9Z41
+!i122 166
+l41
+L32 39
+V:g7Y=>no:Vc`D^ZVh;HHz1
+!s100 4lk`J^S>CkazD8bD@9Tcm2
+R12
+32
+R89
+!i10b 1
+R90
+R91
+R92
+!i113 0
+R17
+R18
+Eregister_file
+Z93 w1623035352
+R4
+Z94 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R7
+R8
+!i122 182
+R0
+Z95 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/register_file.vhd
+Z96 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/register_file.vhd
+l0
+L8 1
+V5oY8GA:C3U90i3INjK:F`1
+!s100 SnN8d4eI59jm8@ZmRSXc@0
+R12
+32
+R86
+!i10b 1
+Z97 !s108 1623041351.000000
+Z98 !s90 -reportprogress|30|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/register_file.vhd|
+Z99 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/register_file.vhd|
+!i113 0
+R17
+R18
+Abehaviour
+R4
+R94
+R7
+R8
+DEx4 work 13 register_file 0 22 5oY8GA:C3U90i3INjK:F`1
+!i122 182
+l27
+L24 20
+V_S>2CkF@U[Rdj9HDCeG842
+!s100 FAS6I;7;j5b5i8m[dTLBT0
+R12
+32
+R86
+!i10b 1
+R97
+R98
+R99
+!i113 0
+R17
+R18
+Eregisterfile_mux
+R38
+R2
+R4
+R94
+R7
+R8
+!i122 183
+R0
+Z100 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/registerfile_mux.vhd
+Z101 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/registerfile_mux.vhd
+l0
+R11
+V;dZn_A?U6T=Wk>>nO7PdJ1
+!s100 F7TLod50GH9XmfoJN<6b10
+R12
+32
+R86
+!i10b 1
+R97
+Z102 !s90 -reportprogress|30|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/registerfile_mux.vhd|
+Z103 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/registerfile_mux.vhd|
+!i113 0
+R17
+R18
+Abeh
+R2
+R4
+R94
+R7
+R8
+DEx4 work 16 registerfile_mux 0 22 ;dZn_A?U6T=Wk>>nO7PdJ1
+!i122 183
+l31
+L29 31
+VaT]hiUg[zhWaa`KSV>2zT1
+!s100 SneU5PRo>Gokz3Pl8O=Zb0
+R12
+32
+R86
+!i10b 1
+R97
+R102
+R103
+!i113 0
+R17
+R18
+Eregisters
+R38
+R3
+R4
 R5
 R6
-Pvarious_constants
-R1
-R2
-R3
-!i122 5
-w1620283212
+R7
+R8
+!i122 184
 R0
-8//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/various_constants.vhd
-F//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/various_constants.vhd
+Z104 8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/registers.vhd
+Z105 F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/registers.vhd
+l0
+R22
+V]]E^[:k`WXm0IX9S@oA371
+!s100 c1:J<dhRfXbV26:`L8?8B3
+R12
+32
+Z106 !s110 1623041352
+!i10b 1
+R97
+Z107 !s90 -reportprogress|30|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/registers.vhd|
+Z108 !s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/registers.vhd|
+!i113 0
+R17
+R18
+Abeh
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 9 registers 0 22 ]]E^[:k`WXm0IX9S@oA371
+!i122 184
+l48
+L46 116
+Vebg[b1CCfS9`E_BhQS0`K1
+!s100 a?:hWEEhm2GXOE`C5S0n<0
+R12
+32
+R106
+!i10b 1
+R97
+R107
+R108
+!i113 0
+R17
+R18
+Pvarious_constants
+R4
+R7
+R8
+!i122 185
+R74
+R0
+8//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/various_constants.vhd
+F//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/various_constants.vhd
 l0
 L7 1
-VFOg;R=SI[HUP4kOGMj6L;2
-!s100 h[mbICG[_VLW<J`?I`[O]1
-R4
+VRjVaiKF:bInnVXNinBFME1
+!s100 GW^2mZ1O]Ql_TjMbi53k50
+R12
 32
-!s110 1620451215
+R106
 !i10b 1
-!s108 1620451215.000000
-!s90 -reportprogress|300|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/recop/various_constants.vhd|
-!s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/recop/various_constants.vhd|
+!s108 1623041352.000000
+!s90 -reportprogress|30|-work|work|//files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/various_constants.vhd|
+!s107 //files.auckland.ac.nz/myhome/Desktop/hsin849/main_recop/newRecop/ReCop-VHDL/various_constants.vhd|
 !i113 0
-R5
-R6
+R17
+R18

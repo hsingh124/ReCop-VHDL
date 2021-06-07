@@ -50,6 +50,15 @@ BEGIN
         -- code that executes only once                      
 WAIT;                                                       
 END PROCESS init;                                           
+
+clk_gen : PROCESS
+BEGIN
+	clk <= '1';
+	wait for 5 ns;
+	clk <= '0';
+	wait for 5 ns;
+END PROCESS clk_gen;
+
 always : PROCESS                                              
 -- optional sensitivity list                                  
 -- (        )                                                 

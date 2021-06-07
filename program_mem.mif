@@ -1,74 +1,27 @@
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
 WIDTH=16;
-DEPTH=128;
-ADDRESS_RADIX=HEX;
+DEPTH=65536;
+
+ADDRESS_RADIX=UNS;
 DATA_RADIX=BIN;
 
 CONTENT BEGIN
-
-000  :   0000000000000000;-- 0
-001  :   0000000000000000;-- 1    
-002  :   0000000000000000;-- 2
-003  :   0000000000000000;-- 3
-004  :   0000000000000000;-- 4
-005  :   0000000000000000;-- 5
-006  :   0000000000000000;-- 6
-007  :   0000000000000000;-- 7
-008  :   0000000000000000;-- 8
-009  :   0000000000000000;-- 9
-00A  :   0000000000000000;-- 10
-00B  :   0000000000000000;-- 11
-00C  :   0000000000000000;-- 12
-00D  :   0000000000000000;-- 13
-00E  :   0000000000000000;-- 14
-00F  :   0000000000000000;-- 15
-010  :   0000000000000000;-- 16
-011  :   0000000000000000;-- 17
-012  :   0000000000000000;-- 18
-013  :   0000000000000000;-- 19
-014  :   0000000000000000;-- 20
-015  :   0000000000000000;-- 21
-016  :   0000000000000000;-- 22
-017  :   0000000000000000;-- 23
-018  :   0000000000000000;-- 24
-019  :   0000000000000000;-- 25
-01A  :   0000000000000000;-- 26
-01B  :   0000000000000000;-- 27
-01C  :   0000000000000000;-- 28
-01D  :   0000000000000000;-- 29
-01E  :   0000000000000000;-- 30
-01F  :   0000000000000000;-- 31
-020  :   0000000000000000;-- 32
-021  :   0000000000000000;-- 33
-022  :   0000000000000000;-- 34
-023  :   0000000000000000;-- 35
-024  :   0000000000000000;-- 36
-025  :   0000000000000000;-- 37
-026  :   0000000000000000;-- 38
-027  :   0000000000000000;-- 39
-028  :   0000000000000000;-- 40
-029  :   0000000000000000;-- 41
-02A  :   0000000000000000;-- 42
-02B  :   0000000000000000;-- 43
-02C  :   0000000000000000;-- 44
-02D  :   0000000000000000;-- 45
-02E  :   0000000000000000;-- 46
-02F  :   0000000000000000;-- 47
-030  :   0000000000000000;-- 48
-031  :   0000000000000000;-- 49
-032  :   0000000000000000;-- 50
-033  :   0000000000000000;-- 51
-034  :   0000000000000000;-- 52
-035  :   0000000000000000;-- 53
-036  :   0000000000000000;-- 54
-037  :   0000000000000000;-- 55
-038  :   0000000000000000;-- 56
-039  :   0000000000000000;-- 57
-03A  :   0000000000000000;-- 58
-03B  :   0000000000000000;-- 59
-03C  :   0000000000000000;-- 60
-03D  :   0000000000000000;-- 61
-03E  :   0000000000000000;-- 62
-03F  :   0000000000000000;-- 63
-
-[40..7F]  :   0000000000000000;
+	0      :   0000000000111000;
+	1      :   0000001100110000;
+	[2..65535]  :   0;
 END;
