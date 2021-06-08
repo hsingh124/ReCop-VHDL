@@ -88,8 +88,15 @@ begin
 				pc_sel_1 <= pc_sel_next;
 				rf_input_sel_1 <= rf_sel_ir_operand;
 				alu_operation_1 <= alu_idle;
+				
 			end if;
 		elsif am = am_direct then
+		
+		elsif am = am_register then
+			
+			if opcode = datacall then
+				
+			end if;
 			
 		else
 		

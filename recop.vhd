@@ -261,6 +261,28 @@ signal data_to_reg	: bit_16	:= X"0000";
 signal regs_reset		: bit_1	:= '0';
 signal pr2_ctrl		: bit_1	:= '1';
 
+signal dpcr				: bit_32	:= x"00000000";
+signal dpcr_lsb_sel	: bit_1	:= '0';
+signal dpcr_wr			: bit_1	:= '0';
+signal er				: bit_1	:= '0';
+signal er_wr			: bit_1	:= '0';
+signal er_clr			: bit_1	:= '0';
+signal eot				: bit_1	:= '0';
+signal eot_wr 			: bit_1	:= '0';
+signal eot_clr  		: bit_1	:= '0';
+
+signal svop 			: bit_16;
+signal svop_wr 		: bit_1;
+signal sip_r 			: bit_16;
+signal sip 				: bit_16;
+signal sop 				: bit_16;
+signal sop_wr 			: bit_1;
+signal dprr 			: bit_2;
+signal irq_wr			: bit_1;
+signal irq_clr			: bit_1;
+signal result_wen		: bit_1;
+signal result 			: bit_1
+
 signal z_flag			: bit_1	:= '0';
 signal ctrl_z_flag	: bit_1	:= '0';
 signal alu_reset		: bit_1	:= '0';
@@ -301,8 +323,8 @@ begin
 	rf: register_file
 	port map (clk, data_to_reg, ir_rx_1, ir_rz_1, ir_rz_2,  rx, rz, r7, r8, r10);
 	
-	--regs: registers
-	--port map (clk, regs_reset, )
+	regs: registers
+	port map (clk, regs_reset, dpcr, r7, rx, ir_operand_1, dpcr_lsb_sel, dpcr_wr, er, er_wr, er_clr, eot, eot_wr, eot_clr, svop, svop_wr, sip_r, sip, sop, sop_wr, dprr, irq_wr, irq_clr, result_wen, result);
 	
 	pr2: pipeline_reg_2
 	port map (clk, pr2_ctrl, ir_rz_1, ir_operand_1, rx, rz, r7, r8, r10, ir_rz_2, ir_operand_2, rx_1, rz_1, r7_1, r8_1, r10_1);
