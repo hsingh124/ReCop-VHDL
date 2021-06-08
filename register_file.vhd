@@ -23,7 +23,7 @@ end register_file;
 
 architecture behaviour of register_file is
 	type reg_array_type is array (15 downto 0) of bit_16;
-	signal reg_array : reg_array_type := (("0000000000000001"),("0000000000000001"),("0000000000000001"),("0000000000000001"),(others => '0'),(others => '0'),(others => '0'),(others => '0'),(others => '0'),(others => '0'),(others => '0'),(others => '0'),("0000000000000001"),("0000000000000001"),("0000000000000001"),("0000000000000001"));
+	signal reg_array : reg_array_type := (("0000000000000001"),("0000000000000111"),("0000000000000001"),("0000000000000001"),(others => '0'),(others => '0'),(others => '0'),(others => '0'),(others => '0'),(others => '0'),(others => '0'),(others => '0'),("0000000000000001"),("0000000000000001"),("0000000000000001"),("0000000000000001"));
 begin
 	
 	rx 	<= reg_array(to_integer(unsigned(sel_x)));
@@ -36,7 +36,7 @@ begin
 	process(clk)
 	begin
 		if rising_edge(clk) then
-			reg_array(to_integer(unsigned(sel_z))) <= z;
+			reg_array(to_integer(unsigned(wr_addr))) <= z;
 		end if;
 	end process;
 
