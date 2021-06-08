@@ -81,7 +81,8 @@ component control_unit
 		dpcr_wr				: out bit_1;
 		dpcr_lsb_sel		: out bit_1;
 		mem_addr_sel		: out bit_2;
-		mem_mux_data_sel	: out bit_2
+		mem_mux_data_sel	: out bit_2;
+		wr_en					: out bit_1
 	);
 end component;
 
@@ -106,6 +107,7 @@ component register_file
 		sel_x		: in bit_4;
 		sel_z		: in bit_4;
 		wr_addr	: in bit_4;
+		wr_en		: in bit_1;
 		rx			: out bit_16;
 		rz			: out bit_16;
 		r7			: out bit_16; -- ccd (current clock domain)
@@ -148,6 +150,7 @@ component pipeline_reg_2
 	port(
 		clk			: in bit_1;
 		ctrl			: in bit_1;
+		wr_en_in		: in bit_1;
 		ir_rz_in		: in bit_4; 
 		ir_operand	: in bit_16;
 		rx_in			: in bit_16;
@@ -155,6 +158,7 @@ component pipeline_reg_2
 		r7_in			: in bit_16;
 		r8_in			: in bit_16;
 		r10_in		: in bit_16;
+		wr_en			: out bit_1;
 		ir_rz			: out bit_4; 
 		operand		: out bit_16 := X"0000";
 		rx				: out bit_16 := X"0000";
@@ -259,6 +263,8 @@ signal rz_max			: bit_16	:= X"0000";
 signal data_to_reg	: bit_16	:= X"0000";
 signal regs_reset		: bit_1	:= '0';
 signal pr2_ctrl		: bit_1	:= '1';
+signal wr_en			: bit_1	:= '1';
+signal wr_en_1			: bit_1	:= '1';
 
 signal dpcr				: bit_32	:= x"00000000";
 signal dpcr_lsb_sel	: bit_1	:= '0';
@@ -314,19 +320,19 @@ begin
 	port map (clk, pr1_ctrl, ir_operand, ir_rx, ir_rz, opcode, am, ir_operand_1, ir_rx_1, ir_rz_1, opcode_1, am_1);
 	
 	cu: control_unit
-	port map (clk, am_1, opcode_1, pc_sel, pr1_ctrl, rf_input_sel, pr2_ctrl, alu_operation, alu_op1_sel, alu_op2_sel, dpcr_wr, dpcr_lsb_sel,  mem_addr_sel, mem_mux_data_sel);
+	port map (clk, am_1, opcode_1, pc_sel, pr1_ctrl, rf_input_sel, pr2_ctrl, alu_operation, alu_op1_sel, alu_op2_sel, dpcr_wr, dpcr_lsb_sel,  mem_addr_sel, mem_mux_data_sel, wr_en);
 	
 	rf_mux: registerfile_mux
 	port map (rf_input_sel, ir_operand_2, dm_out, alu_out, rz_max, sip, er, dprr(0), data_to_reg);
 	
 	rf: register_file
-	port map (clk, data_to_reg, ir_rx_1, ir_rz_1, ir_rz_2,  rx, rz, r7, r8, r10);
+	port map (clk, data_to_reg, ir_rx_1, ir_rz_1, ir_rz_2, wr_en_1,  rx, rz, r7, r8, r10);
 	
 	regs: registers
 	port map (clk, regs_reset, dpcr, r7, rx, ir_operand_1, dpcr_lsb_sel, dpcr_wr, er, er_wr, er_clr, eot, eot_wr, eot_clr, svop, svop_wr, sip_r, sip, sop, sop_wr, dprr, irq_wr, irq_clr, result_wen, result);
 	
 	pr2: pipeline_reg_2
-	port map (clk, pr2_ctrl, ir_rz_1, ir_operand_1, rx, rz, r7, r8, r10, ir_rz_2, ir_operand_2, rx_1, rz_1, r7_1, r8_1, r10_1);
+	port map (clk, pr2_ctrl, wr_en, ir_rz_1, ir_operand_1, rx, rz, r7, r8, r10, wr_en_1, ir_rz_2, ir_operand_2, rx_1, rz_1, r7_1, r8_1, r10_1);
 	
 	alu_1: alu
 	port map (clk, z_flag, alu_operation, alu_op1_sel, alu_op2_sel, alu_carry, alu_out, rx_1, rz_1, ir_operand_2, ctrl_z_flag, alu_reset);

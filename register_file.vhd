@@ -12,6 +12,7 @@ port(
 	sel_x		: in bit_4;
 	sel_z		: in bit_4;
 	wr_addr	: in bit_4;
+	wr_en		: in bit_1;
 	rx			: out bit_16;
 	rz			: out bit_16;
 	r7			: out bit_16; -- ccd (current clock domain)
@@ -36,7 +37,9 @@ begin
 	process(clk)
 	begin
 		if rising_edge(clk) then
-			reg_array(to_integer(unsigned(wr_addr))) <= z;
+			if wr_en = '1' then
+				reg_array(to_integer(unsigned(wr_addr))) <= z;
+			end if;
 		end if;
 	end process;
 

@@ -8,6 +8,7 @@ entity pipeline_reg_2 is
 port(
 	clk			: in bit_1;
 	ctrl			: in bit_1;
+	wr_en_in		: in bit_1;
 	ir_rz_in		: in bit_4; 
 	ir_operand	: in bit_16;
 	rx_in			: in bit_16;
@@ -16,6 +17,7 @@ port(
 	r8_in			: in bit_16;
 	r10_in		: in bit_16;
 	-- need to add inputs for control signals (manipulating mux decisions)
+	wr_en			: out bit_1;
 	ir_rz			: out bit_4; 
 	operand		: out bit_16 := X"0000";
 	rx				: out bit_16 := X"0000";
@@ -32,6 +34,7 @@ begin
 	begin
 		if rising_edge(clk) then
 			if ctrl='1' then
+				wr_en <= wr_en_in;
 				ir_rz <= ir_rz_in;
 				operand <= ir_operand;
 				rx <= rx_in;
