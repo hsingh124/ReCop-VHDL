@@ -20,6 +20,8 @@ entity control_unit is
 		alu_operation		: out bit_3;
 		alu_op1_sel			: out bit_2;
 		alu_op2_sel			: out bit_1;
+		dpcr_wr				: out bit_1;
+		dpcr_lsb_sel		: out bit_1;
 		mem_addr_sel		: out bit_2;
 		mem_mux_data_sel	: out bit_2
 	);
@@ -44,8 +46,11 @@ signal pr2_ctrl_1				: bit_1 := '1';
 signal alu_operation_1		: bit_3 := alu_idle;
 signal alu_op1_sel_1			: bit_2;
 signal alu_op2_sel_1			: bit_1;
+signal dpcr_wr_1				: bit_1;
+signal dpcr_lsb_sel_1		: bit_1;
 signal mem_addr_sel_1		: bit_2 := "00";
 signal mem_mux_data_sel_1	: bit_2 := "00";
+
 
 begin
 
@@ -88,8 +93,16 @@ begin
 				pc_sel_1 <= pc_sel_next;
 				rf_input_sel_1 <= rf_sel_ir_operand;
 				alu_operation_1 <= alu_idle;
+				
 			end if;
 		elsif am = am_direct then
+		
+		elsif am = am_register then
+			
+			if opcode = datacall then
+				dpcr_wr_1 <= '1';
+				dpcr_lsb_sel_1 <= '0';
+			end if;
 			
 		else
 		
@@ -106,6 +119,8 @@ begin
 			alu_operation <= alu_operation_1;
 			alu_op1_sel <= alu_op1_sel_1;
 			alu_op2_sel <= alu_op2_sel_1;
+			dpcr_wr <= dpcr_wr_1;
+			dpcr_lsb_sel <= dpcr_lsb_sel_1;
 			mem_addr_sel <= mem_addr_sel_1;
 			mem_mux_data_sel <= mem_mux_data_sel_1;
 		end if;
