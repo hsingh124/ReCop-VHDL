@@ -35,6 +35,17 @@ component program_mem_32
 	);
 end component;
 
+component program_mem_32_ram IS
+	PORT
+	(
+		address		: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+		clock		: IN STD_LOGIC  := '1';
+		data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+		wren		: IN STD_LOGIC ;
+		q		: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+	);
+END component;
+
 component instruction_reg
 	port (
 		clk			: in bit_1;
@@ -305,13 +316,19 @@ signal mem_mux_data_out	: bit_16 := X"0000";
 
 signal dprr_concat		: bit_16 := X"0000";
 
+signal prg_mem_wren		: bit_1 := '0';
+signal prg_mem_data		: bit_32 := x"00000000";
+
 begin
 
 	pc: program_counter
 	port map (clk, pc_sel, dm_out, rx, ir_operand, pc_out);
 
-	pm: program_mem_32
-	port map (pc_out, clk, pm_out);
+--	pm: program_mem_32
+--	port map (pc_out, clk, pm_out);
+	
+	pm: program_mem_32_ram
+	port map (pc_out, clk, prg_mem_data, prg_mem_wren, pm_out);
 	
 	ir: instruction_reg
 	port map (clk, pm_out, ir_operand, ir_rx, ir_rz, opcode, am);

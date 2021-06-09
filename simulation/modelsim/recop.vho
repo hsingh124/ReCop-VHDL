@@ -14,16 +14,16 @@
 
 -- VENDOR "Altera"
 -- PROGRAM "Quartus Prime"
--- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+-- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition"
 
--- DATE "06/09/2021 01:36:53"
+-- DATE "06/09/2021 12:46:57"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
 -- 
 
 -- 
--- This VHDL file should be used for ModelSim (VHDL) only
+-- This VHDL file should be used for ModelSim-Altera (VHDL) only
 -- 
 
 LIBRARY ALTERA_LNSIM;

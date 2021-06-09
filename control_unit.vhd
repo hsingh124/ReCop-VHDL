@@ -68,6 +68,7 @@ begin
 				alu_operation_1 <= alu_add;
 				alu_op1_sel_1 <= alu_op1_ir_operand;
 				alu_op2_sel_1 <= alu_op2_sel_rx;
+				dpcr_wr_1 <= '0';
 				wr_en_1 <= '1';
 			
 			elsif opcode = andr then
@@ -76,6 +77,7 @@ begin
 				alu_operation_1 <= alu_and;
 				alu_op1_sel_1 <= alu_op1_ir_operand;
 				alu_op2_sel_1 <= alu_op2_sel_rx;
+				dpcr_wr_1 <= '0';
 				wr_en_1 <= '1';
 			
 			elsif opcode = orr then
@@ -84,6 +86,7 @@ begin
 				alu_operation_1 <= alu_or;
 				alu_op1_sel_1 <= alu_op1_ir_operand;
 				alu_op2_sel_1 <= alu_op2_sel_rx;
+				dpcr_wr_1 <= '0';
 				wr_en_1 <= '1';
 			
 			-- double check the subv and sub stuff
@@ -93,13 +96,20 @@ begin
 				alu_operation_1 <= alu_sub;
 				alu_op1_sel_1 <= alu_op1_ir_operand;
 				alu_op2_sel_1 <= alu_op2_sel_rx;
+				dpcr_wr_1 <= '0';
 				wr_en_1 <= '1';
 			
 			elsif opcode = ldr then
 				pc_sel_1 <= pc_sel_next;
 				rf_input_sel_1 <= rf_sel_ir_operand;
 				alu_operation_1 <= alu_idle;
+				dpcr_wr_1 <= '0';
 				wr_en_1 <= '1';
+			
+			elsif opcode = datacall then
+				dpcr_wr_1 <= '1';
+				dpcr_lsb_sel_1 <= '1';
+				wr_en_1 <= '0';
 				
 			end if;
 		elsif am = am_direct then
@@ -110,6 +120,7 @@ begin
 				dpcr_wr_1 <= '1';
 				dpcr_lsb_sel_1 <= '0';
 				wr_en_1 <= '0';
+				
 			end if;
 			
 		else
@@ -120,7 +131,7 @@ begin
 	set_controls: process (clk)
 	begin
 		wr_en <= wr_en_1;
-		if rising_edge(clk) then
+		--if rising_edge(clk) then
 			pc_sel <= pc_sel_1;
 			pr1_ctrl <= pr1_ctrl_1;
 			rf_input_sel <= rf_input_sel_1;
@@ -132,7 +143,7 @@ begin
 			dpcr_lsb_sel <= dpcr_lsb_sel_1;
 			mem_addr_sel <= mem_addr_sel_1;
 			mem_mux_data_sel <= mem_mux_data_sel_1;
-		end if;
+		--end if;
 	
 	end process set_controls;
 
